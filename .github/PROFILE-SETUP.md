@@ -1,42 +1,46 @@
-# GitHub profile settings
+# Profile finishing details
 
-The root README is the profile design. These account fields are configured separately in GitHub's **Edit profile** panel; this document provides matching copy. Account settings have not been changed.
+The README redesign is saved in this repository. The values below are prepared for GitHub's **Edit profile** panel; account settings have not been changed.
 
-| Field | Value |
+| Field | Recommended value |
 | :--- | :--- |
-| Name | IQX Solutions |
-| Bio | Websites, SEO & digital experiences. IQX first. Tralionex for business systems & marketing. Click2Print for print & packaging. Lahore → UK, remotely. |
-| Company | IQX Solutions |
+| Display name | IQX Solutions |
+| Bio | Web development, SEO and digital experiences for UK businesses. Based in Lahore. IQX · Tralionex · Click2Print. |
+| Company | IQX Intelligence Quotient |
 | Location | Lahore, Pakistan |
 | Website | https://iqx.world/ |
-| Public email | iqx.world@gmail.com — if you want it shown in the sidebar |
-| Avatar | [Official IQX logo](../assets/iqx-official-avatar.png), copied unchanged from the existing IQX website |
+| Public email | iqx.world@gmail.com, if you want it displayed |
+| Avatar | [Official IQX logo](../assets/iqx-official-avatar.png) |
 
-Additional website links, where GitHub settings support them:
+The public profile inspected on 26 October 2026 has a bio ending in “Pakistan Netw” and a full street address in the location field. The shorter copy above fits the bio and gives the sidebar a cleaner hierarchy. Keep the full business address on the official website.
 
-- Tralionex: https://tralionex.pk/
-- Click2Print: https://click2print.pk/
+Keep IQX as the main website. Include [Tralionex](https://tralionex.pk/) and [Click2Print](https://click2print.pk/) as additional links where supported.
 
-## Repository presentation
+## Repository and pinned work
 
-Keep `IQXIntelligenceQuotient/IQXIntelligenceQuotient` public and keep `README.md` in the root. GitHub uses this matching repository as the account's profile README.
+Suggested description for the profile repository:
 
-Suggested repository description:
+> IQX Solutions — web development, search and digital experiences. Featuring Tralionex and Click2Print.
 
-> IQX Solutions — websites, search & digital experiences. Featuring Tralionex and Click2Print.
+The public account currently lists the profile repository, `Grappling-Federation-of-Pakistan`, and `yellowcoda`. Pin the maintained project repositories you want visitors to review, with clear descriptions, working demos where available, and useful READMEs. This redesign does not change repository settings or pins.
 
-Suggested topics: `iqx`, `web-development`, `web-design`, `technical-seo`, `react`, `vite`, `static-site-generation`, `lahore`, `pakistan`.
+## Design
 
-Pin the public IQX website repository first. If Tralionex and Click2Print have public source repositories, pin those second and third. Only pin repositories with code you intend to make public.
+- Official IQX identity, with a silver, slate, and blue visual system.
+- One concise introduction, a prominent IQX service overview, and two smaller supporting brand cards.
+- Native text for the services, engineering approach, technology stack, and contact links.
+- No repeated service matrix, navigation row, long FAQ, or external badge dependencies.
+- Light and dark header/card artwork. The mobile header uses larger typography and a dedicated composition.
+- Original profile artwork, not website screenshots. Automated screenshot requests to the official sites returned a browser check.
 
-## Design and maintenance
+All SVGs are static. The header embeds the official logo as a PNG data URI, keeping the artwork self-contained. The logo itself is copied unchanged from the existing IQX website.
 
-- IQX leads the page; Tralionex is explicitly secondary; Click2Print follows as print and packaging.
-- The banner and two brand panels are static SVGs with no remote fonts, scripts, trackers, or external asset dependencies.
-- The SVG panels are editorial profile artwork; the PNG avatar is the existing official IQX logo.
-- Headings, descriptions, contact details, and FAQs also appear as native Markdown/HTML text.
-- Relative image paths work on GitHub's repository and profile README views. Publish the assets folder together with the README.
-- GitHub manages the surrounding HTML, metadata, and indexing. This is a GitHub profile README, not a separately hosted website, so Vite, prerendering, robots files, and sitemaps do not apply here.
-- The IQX website's existing code confirms React, Vite, Tailwind CSS, Motion, React Router, Node.js build scripts, and static prerendering. Avoid unsupported credentials, client counts, ratings, or performance claims.
+To regenerate the artwork with Node.js:
 
-Sources: [IQX](https://iqx.world/), [Tralionex](https://tralionex.pk/), [Click2Print](https://click2print.pk/). Profile repository behavior: [GitHub documentation](https://docs.github.com/en/account-and-profile/how-tos/profile-customization/managing-your-profile-readme).
+```sh
+node scripts/generate-profile-assets.mjs
+```
+
+Publish the README and assets together. GitHub renders the Markdown as HTML and controls the surrounding navigation, sidebar, contribution graph, metadata, and indexing; a separate Vite website, robots.txt, or sitemap would not customize those surfaces.
+
+Sources: [IQX](https://iqx.world/), [Tralionex](https://tralionex.pk/), [Click2Print](https://click2print.pk/), [GitHub profile README documentation](https://docs.github.com/en/account-and-profile/how-tos/profile-customization/managing-your-profile-readme).

@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="480" viewBox="0 0 1280 480" role="img" aria-labelledby="title description">
+  <title id="title">IQX Solutions — Ideas, built to work.</title>
+  <desc id="description">A navy and ice-blue banner for IQX Solutions with an abstract browser illustration. Websites, search and digital experiences, delivered from Lahore.</desc>
+  <defs>
+    <linearGradient id="background" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#101e34"/><stop offset="1" stop-color="#070e1b"/></linearGradient>
+    <radialGradient id="glow"><stop stop-color="#3569a4" stop-opacity=".42"/><stop offset="1" stop-color="#3569a4" stop-opacity="0"/></radialGradient>
+    <linearGradient id="panel" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#213c5b"/><stop offset="1" stop-color="#14253a"/></linearGradient>
+    <linearGradient id="highlight" x1="0" y1="0" x2="1" y2="0"><stop stop-color="#d9edff"/><stop offset="1" stop-color="#8bbbed"/></linearGradient>
+    <pattern id="grid" width="48" height="48" patternUnits="userSpaceOnUse"><path d="M48 0H0V48" fill="none" stroke="#b6d7fa" stroke-opacity=".035"/></pattern>
+  </defs>
+  <rect width="1280" height="480" rx="24" fill="url(#background)"/>
+  <rect width="1280" height="480" rx="24" fill="url(#grid)"/>
+  <ellipse cx="1020" cy="220" rx="420" ry="340" fill="url(#glow)"/>
+  <rect x=".5" y=".5" width="1279" height="479" rx="23.5" fill="none" stroke="#a2c3e8" stroke-opacity=".17"/>
+  <g font-family="Segoe UI, Arial, sans-serif">
+    <text x="62" y="100" fill="#f3f8ff" font-size="62" font-weight="750" letter-spacing="-3">IQX<tspan fill="#8bbbed">.</tspan></text>
+    <path d="M233 55V101" stroke="#4b647f"/>
+    <text x="256" y="73" fill="#d5e5f7" font-size="18" font-weight="600" letter-spacing="2.5">INTELLIGENCE</text>
+    <text x="256" y="98" fill="#d5e5f7" font-size="18" font-weight="600" letter-spacing="2.5">QUOTIENT</text>
+    <text x="62" y="218" fill="#f3f8ff" font-size="64" font-weight="650" letter-spacing="-2.6">Ideas, built</text>
+    <text x="62" y="289" fill="url(#highlight)" font-size="64" font-weight="650" letter-spacing="-2.6">to work.</text>
+    <text x="65" y="342" fill="#b4c9df" font-size="21">Websites. Search. Digital experiences.</text>
+    <path d="M64 388H670" stroke="#324862"/>
+    <text x="64" y="429" fill="#b4c9df" font-size="18">Lahore, Pakistan · Working remotely with UK businesses</text>
+  </g>
+  <g transform="translate(770 67)">
+    <rect x="32" y="30" width="358" height="300" rx="18" fill="#080f1c" fill-opacity=".45" stroke="#325070"/>
+    <rect x="16" y="15" width="358" height="300" rx="18" fill="#12233a" stroke="#476687"/>
+    <rect width="358" height="300" rx="18" fill="url(#panel)" stroke="#597797"/>
+    <path d="M0 47H358" stroke="#46627e"/>
+    <g fill="#92adc8"><circle cx="23" cy="24" r="4"/><circle cx="39" cy="24" r="4"/><circle cx="55" cy="24" r="4"/></g>
+    <rect x="102" y="15" width="155" height="18" rx="9" fill="#101f32"/>
+    <text x="179" y="28" text-anchor="middle" fill="#c1d7ed" font-family="Segoe UI, Arial, sans-serif" font-size="11" letter-spacing="1">iqx.world</text>
+    <rect x="24" y="72" width="310" height="91" rx="10" fill="#dcecff"/>
+    <path d="M45 135L64 106L82 123L107 94M95 94H107V106" fill="none" stroke="#315f8c" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+    <g font-family="Segoe UI, Arial, sans-serif" font-weight="600" font-size="19" fill="#18334e"><text x="130" y="110">Designed for people.</text><text x="130" y="140">Built for the web.</text></g>
+    <rect x="24" y="181" width="145" height="94" rx="10" fill="#0d1b2d" stroke="#3d5976"/>
+    <path d="M47 205L39 213L47 221M70 205L78 213L70 221M62 200L54 226" fill="none" stroke="#a7cffa" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+    <text x="39" y="254" fill="#d5e5f7" font-family="Segoe UI, Arial, sans-serif" font-size="15">Readable HTML</text>
+    <rect x="187" y="181" width="147" height="94" rx="10" fill="#0d1b2d" stroke="#3d5976"/>
+    <circle cx="215" cy="212" r="10" fill="none" stroke="#a7cffa" stroke-width="2.5"/>
+    <path d="M222 220L231 229" stroke="#a7cffa" stroke-width="2.5" stroke-linecap="round"/>
+    <text x="202" y="254" fill="#d5e5f7" font-family="Segoe UI, Arial, sans-serif" font-size="15">Search aware</text>
+  </g>
+</svg>

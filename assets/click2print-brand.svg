@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="240" viewBox="0 0 1280 240" role="img" aria-labelledby="title description">
+  <title id="title">Click2Print — From brand to print.</title>
+  <desc id="description">A pale blue panel with abstract layered print sheets. Printing and packaging coordinated from Lahore.</desc>
+  <rect width="1280" height="240" rx="20" fill="#eef5f8"/>
+  <rect x=".5" y=".5" width="1279" height="239" rx="19.5" fill="none" stroke="#d0e0e7"/>
+  <rect x="48" y="43" width="4" height="151" rx="2" fill="#24657d"/>
+  <g font-family="Segoe UI, Arial, sans-serif">
+    <text x="76" y="66" fill="#245d71" font-size="17" font-weight="650" letter-spacing="3">03 / PRINT &amp; PACKAGING</text>
+    <text x="73" y="132" fill="#142f3c" font-size="58" font-weight="650" letter-spacing="-2">Click<tspan fill="#24657d">2</tspan>Print<tspan fill="#24657d">.</tspan></text>
+    <text x="76" y="176" fill="#355868" font-size="24">From brand to print.</text>
+    <text x="76" y="210" fill="#496575" font-size="18">click2print.pk · Coordinated from Lahore</text>
+  </g>
+  <g transform="translate(960 34)">
+    <rect x="55" y="12" width="112" height="145" rx="10" fill="#183743" transform="rotate(12 111 84)"/>
+    <rect x="35" y="16" width="112" height="145" rx="10" fill="#ebbf4f" transform="rotate(4 91 88)"/>
+    <rect x="17" y="24" width="112" height="145" rx="10" fill="#c46590" transform="rotate(-4 73 96)"/>
+    <rect x="0" y="34" width="112" height="145" rx="10" fill="#2585a0" transform="rotate(-12 56 106)"/>
+    <g transform="rotate(-12 56 106)" fill="#fff">
+      <rect x="21" y="61" width="40" height="5" rx="2.5"/><rect x="21" y="74" width="65" height="5" rx="2.5" opacity=".6"/>
+      <circle cx="57" cy="123" r="25" opacity=".18"/>
+      <path d="M43 123L53 133L72 112" fill="none" stroke="#fff" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+    </g>
+  </g>
+</svg>

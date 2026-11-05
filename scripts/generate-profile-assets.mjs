@@ -3,6 +3,8 @@ import { fileURLToPath } from 'node:url';
 const assets = new URL('../assets/', import.meta.url);
 await mkdir(assets, { recursive: true });
 const logo = (await readFile(new URL('iqx-official-avatar.png', assets))).toString('base64');
+const tralionexLogo = (await readFile(new URL('tralionex-official-logo.webp', assets))).toString('base64');
+const click2printLogo = (await readFile(new URL('click2print-official-logo.webp', assets))).toString('base64');
 const font = 'Segoe UI, Arial, sans-serif';
 const svg = (width, height, title, description, content) => `<svg xmlns="http://www.w3.org/2000/svg" width="${width}" height="${height}" viewBox="0 0 ${width} ${height}" role="img" aria-labelledby="title desc"><title id="title">${title}</title><desc id="desc">${description}</desc>${content}</svg>\n`;
 for (const dark of [false, true]) {
@@ -36,11 +38,19 @@ for (const dark of [false, true]) {
     await writeFile(new URL(name, assets), svg(width, height, 'IQX Solutions — Intelligence, applied.', 'Web development, search and digital experiences. The original IQX logo appears beside the headline.', content));
   }
   const brandCards = [
-    { file:'tralionex', title:'Tralionex', label:'DIGITAL &amp; BUSINESS', number:'02', icon:`<path d="M0 14L24 0L48 14V42L24 56L0 42Z"/><path d="M24 0V28L48 42M24 28L0 42"/>` },
-    { file:'click2print', title:'Click2Print', label:'PRINT &amp; PACKAGING', number:'03', icon:`<rect x="6" y="2" width="38" height="48" rx="3"/><path d="M0 10V58H36M15 17H35M15 26H35M15 35H28"/>` },
+    {
+      file: 'tralionex', title: 'Tralionex', label: 'DIGITAL &amp; BUSINESS', number: '02', plateX: 468,
+      artwork: `<image href="data:image/webp;base64,${tralionexLogo}" x="480" y="43" width="90" height="90"/>`,
+    },
+    {
+      file: 'click2print', title: 'Click2Print', label: 'PRINT &amp; PACKAGING', number: '03', plateX: 366,
+      // Frame the supplied mark tightly without changing the original WebP.
+      artwork: `<svg x="377" y="41" width="194" height="94" viewBox="360 42 775 416" overflow="hidden"><image href="data:image/webp;base64,${click2printLogo}" width="1497" height="498"/></svg>`,
+    },
   ];
   for (const brand of brandCards) {
-    const content=`<rect width="600" height="176" rx="10" fill="${bg}"/><g font-family="${font}"><text x="27" y="41" fill="${muted}" font-size="16" font-weight="600" letter-spacing="2">${brand.number} / ${brand.label}</text><text x="25" y="113" fill="${ink}" font-size="51" font-weight="650" letter-spacing="-1.6">${brand.title}</text><path d="M28 142H74" stroke="${accent}" stroke-width="3"/></g><g transform="translate(504 78)" fill="none" stroke="${accent}" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">${brand.icon}</g>`;
+    const logoPlate = `<rect x="${brand.plateX}" y="34" width="${582 - brand.plateX}" height="108" rx="8" fill="#fff" stroke="${line}"/>`;
+    const content=`<rect width="600" height="176" rx="10" fill="${bg}"/><g font-family="${font}"><text x="27" y="41" fill="${muted}" font-size="16" font-weight="600" letter-spacing="2">${brand.number} / ${brand.label}</text><text x="25" y="113" fill="${ink}" font-size="51" font-weight="650" letter-spacing="-1.6">${brand.title}</text><path d="M28 142H74" stroke="${accent}" stroke-width="3"/></g>${logoPlate}${brand.artwork}`;
     await writeFile(new URL(`${brand.file}-card${suffix}.svg`, assets), svg(600,176,brand.title,brand.label.replaceAll('&amp;','and'),content));
   }
 }
